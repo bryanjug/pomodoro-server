@@ -1,8 +1,23 @@
 {
+  "scripts": {
+    "start": "json-server -p 3001 -w db.json"
+  },
   "dependencies": {
     "json-server": "^0.16.3"
   },
-  "scripts": {
-    "start": "json-server -p 3001 -w db.json"
-  }
+  "name": "pomodoro-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanjug/pomodoro-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanjug/pomodoro-server/issues"
+  },
+  "homepage": "https://github.com/bryanjug/pomodoro-server#readme",
+  "description": ""
 }

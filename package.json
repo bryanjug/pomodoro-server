@@ -3,12 +3,12 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.16.3"
   },
   "name": "pomodoro-server",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryanjug/pomodoro-server.git"

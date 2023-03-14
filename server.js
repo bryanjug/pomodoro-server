@@ -5,7 +5,10 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000; //PORT was 4000 but caused error on local machine
+
+var cors = require('cors')
+server.use(cors()) // Use this after the variable declaration
 
 server.use(middlewares)
 server.use(router)

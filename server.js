@@ -26,14 +26,16 @@ const filePath = "./db.json";
 const file = require(filePath);
 
 function ResetDB() {
-    var data = JSON.parse(fs.readFileSync(filePath));
-    ResetDay(data)
-    data = JSON.parse(fs.readFileSync(filePath));
-    ResetWeek(data)
-    data = JSON.parse(fs.readFileSync(filePath));
-    ResetMonth(data)
-    data = JSON.parse(fs.readFileSync(filePath));
-    ResetYear(data)
+    setInterval(function(){
+        let data = JSON.parse(fs.readFileSync(filePath));
+        ResetDay(data)
+        data = JSON.parse(fs.readFileSync(filePath));
+        ResetWeek(data)
+        data = JSON.parse(fs.readFileSync(filePath));
+        ResetMonth(data)
+        data = JSON.parse(fs.readFileSync(filePath));
+        ResetYear(data)
+    }, 3600000);
 }
 
 ResetDB()
